@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ToyBench Pro — Registratie</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-light">
+
+  <div class="alert alert-primary rounded-0 mb-0 text-center py-2" role="alert">
+    Word lid van <strong>ToyBench Pro</strong> en ontvang 10% welkomstkorting.
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm" aria-label="navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="text-danger fw-bold">ToyBench</span>
+        <span class="text-primary fw-bold ms-1">Pro</span>
+      </a>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Alle speelgoed</a></li>
+              <li><a class="dropdown-item" href="#">Voertuigen</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Cadeaubonnen</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link active fw-bold" href="register.html">Registratie</a></li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Zoeken">
+          <button class="btn btn-outline-primary" type="submit">Zoeken</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-4 small">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Registratie</li>
+      </ol>
+    </nav>
+
+    <div class="row g-4">
+      <div class="col-lg-9">
+        <div class="card shadow-sm border-0 p-4">
+          <h1 class="h3 fw-bold mb-1">Maak jouw ToyBench Pro-account</h1>
+          <p class="text-muted small mb-4">Velden met * zijn verplicht.</p>
+
+          <form>
+            <h2 class="h5 text-secondary border-bottom pb-2 mb-3 mt-2">ACCOUNT</h2>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="email" class="form-label small fw-bold">E-mailadres *</label>
+                <input id="email" class="form-control" placeholder="naam@voorbeeld.be" type="email">
+              </div>
+              <div class="col-md-6">
+                <label for="username" class="form-label small fw-bold">Gebruikersnaam *</label>
+                <div class="input-group">
+                  <span class="input-group-text">@</span>
+                  <input id="username" class="form-control" type="text">
+                  <button class="btn btn-outline-secondary btn-sm" type="button">Beschikbaar?</button>
+                </div>
+                <div class="form-text x-small">Enkel letters, cijfers en underscores.</div>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <label for="pwd" class="form-label small fw-bold">Wachtwoord *</label>
+                <input id="pwd" class="form-control" type="password">
+                <div class="form-text x-small">Minstens 8 tekens. Gebruik bij voorkeur een zin.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="pwd2" class="form-label small fw-bold">Herhaal wachtwoord *</label>
+                <input id="pwd2" class="form-control" type="password">
+              </div>
+            </div>
+
+            <h2 class="h5 text-secondary border-bottom pb-2 mb-3 mt-4">PERSOONLIJK</h2>
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <label for="firstName" class="form-label small fw-bold">Voornaam *</label>
+                <input id="firstName" class="form-control" type="text">
+              </div>
+              <div class="col-md-4">
+                <label for="lastName" class="form-label small fw-bold">Achternaam *</label>
+                <input id="lastName" class="form-control" type="text">
+              </div>
+              <div class="col-md-4">
+                <label for="birth" class="form-label small fw-bold">Geboortedatum</label>
+                <input id="birth" class="form-control" type="date">
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <label for="phone" class="form-label small fw-bold">Telefoon</label>
+                <div class="input-group">
+                  <span class="input-group-text">+32</span>
+                  <input id="phone" class="form-control" placeholder="04..." type="tel">
+                </div>
+                <div class="form-text x-small">We gebruiken dit alleen voor leveringsupdates.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="website" class="form-label small fw-bold">Website (optioneel)</label>
+                <div class="input-group">
+                  <span class="input-group-text">https://</span>
+                  <input id="website" class="form-control" placeholder="voorbeeld.be" type="text">
+                </div>
+              </div>
+            </div>
+
+            <h2 class="h5 text-secondary border-bottom pb-2 mb-3 mt-4">ADRES</h2>
+            <div class="row mb-3">
+              <div class="col-md-8">
+                <label for="street" class="form-label small fw-bold">Straat &amp; nr. *</label>
+                <input id="street" class="form-control" type="text">
+              </div>
+              <div class="col-md-4">
+                <label for="bus" class="form-label small fw-bold">Bus</label>
+                <input id="bus" class="form-control" placeholder="bvb. bus 2" type="text">
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md-4">
+                <label for="zip" class="form-label small fw-bold">Postcode *</label>
+                <input id="zip" class="form-control" type="text">
+              </div>
+              <div class="col-md-4">
+                <label for="city" class="form-label small fw-bold">Gemeente *</label>
+                <input id="city" class="form-control" type="text">
+              </div>
+              <div class="col-md-4">
+                <label for="country" class="form-label small fw-bold">Land *</label>
+                <select id="country" class="form-select">
+                  <option selected disabled>Kies...</option>
+                  <option>België</option>
+                  <option>Nederland</option>
+                </select>
+              </div>
+            </div>
+
+            <h2 class="h5 text-secondary border-bottom pb-2 mb-3 mt-4">VOORKEUREN</h2>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="favCat" class="form-label small fw-bold">Favoriete categorie</label>
+                <select id="favCat" class="form-select">
+                  <option>Voertuigen</option>
+                  <option>Pluche</option>
+                </select>
+                
+                <label for="color" class="form-label small fw-bold mt-3">Kleuraccent</label>
+                <input id="color" class="form-control form-control-color w-100" type="color" value="#ffd166">
+              </div>
+              <div class="col-md-6">
+                <label for="themes" class="form-label small fw-bold">Interesses (meervoud)</label>
+                <select id="themes" class="form-select" size="4" multiple>
+                  <option>Avontuur</option>
+                  <option>Educatief</option>
+                  <option>Creatief</option>
+                  <option>Retro</option>
+                </select>
+                <div class="form-text x-small">Houd Ctrl/Cmd ingedrukt om meerdere te selecteren.</div>
+              </div>
+            </div>
+
+            <div class="mb-3 mt-4">
+              <label for="range" class="form-label small fw-bold">Nieuwsbrief frequentie</label>
+              <input id="range" class="form-range" max="10" min="0" type="range">
+              <div class="d-flex justify-content-between x-small text-muted">
+                <span>0 = zelden</span>
+                <span>10 = vaak</span>
+              </div>
+            </div>
+
+            <div class="mt-5 border-top pt-4">
+              <button class="btn btn-primary px-4 py-2 fw-bold" type="submit">Account aanmaken</button>
+              <button class="btn btn-outline-secondary px-4 py-2 ms-2" type="reset">Leegmaken</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <aside class="col-lg-3">
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-header bg-white fw-bold py-3">Tips</div>
+          <div class="card-body">
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-3">Gebruik een uniek wachtwoord.</li>
+              <li class="mb-3 text-muted">Leveradres = factuuradres? Laat de collapse dicht.</li>
+              <li class="text-muted">Meerdere interesses? Gebruik de multiselect.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card shadow-sm border-0 p-3">
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-secondary btn-sm flex-fill" type="button">Privacy</button>
+            <button class="btn btn-outline-secondary btn-sm flex-fill" type="button">Tooltip</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="mt-5 py-4 text-center border-top">
+      <ul class="list-inline small mb-2">
+        <li class="list-inline-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-muted">Voorwaarden</a></li>
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-muted">Privacy</a></li>
+      </ul>
+      <p class="text-muted x-small">© 2026 ToyBench Pro</p>
+    </footer>
+  </main>
+</body>
+
+</html>
